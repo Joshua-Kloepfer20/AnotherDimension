@@ -6,6 +6,7 @@ public class Tester {
     int[][] arr1 = {{1, 2, 3, 4}, {2, 3, 4, 1}, {3, 4, 1, 2}};
     int[][] arr2 = {{1, 1, 1}, {2, 2, 2}, {3, 3, 3}};
     int[][] arr3 = {{2, 2, 2}, {2, 2, 2}};
+    int[][] E = {{2, 4, 2}, {2, 2, 2}};
     System.out.println(ArrayOps.sum(B));
     System.out.println(ArrayOps.largest(B));
     System.out.println(Arrays.toString(ArrayOps.sumRows(A)));
@@ -18,5 +19,7 @@ public class Tester {
     System.out.println(ArrayOps.isColMagic(arr1));
     System.out.println(ArrayOps.isColMagic(arr2));
     System.out.println(ArrayOps.isColMagic(arr3));
+    System.out.println(ArrayOps.isLocationMagic(E, 0, 1));
+    System.out.println(ArrayOps.isLocationMagic(E, 1, 1));
   }
 }
